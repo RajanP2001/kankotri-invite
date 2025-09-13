@@ -1,0 +1,45 @@
+/* Flip animation */
+.flip-enter {
+  transform: rotateY(90deg);
+  opacity: 0;
+}
+.flip-enter-active {
+  transform: rotateY(0deg);
+  opacity: 1;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+.flip-exit {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+.flip-exit-active {
+  transform: rotateY(-90deg);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Nav buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+.nav-buttons button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: 2px solid gold;
+  background: #600;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav-buttons button:hover {
+  background: #800;
+}

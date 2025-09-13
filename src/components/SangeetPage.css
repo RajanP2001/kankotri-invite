@@ -1,0 +1,56 @@
+.sangeet-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.sangeet-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sangeet-background-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+  margin: 10px auto;
+}
+
+.sangeet-overlay-text {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  font-family: "Cinzel Decorative", serif;
+}
+
+.sangeet-overlay-text .title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.sangeet-overlay-text .date {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+}
+
+.sangeet-overlay-text .time {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}

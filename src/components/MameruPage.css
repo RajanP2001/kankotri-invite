@@ -1,0 +1,50 @@
+.mameru-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.mameru-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mameru-background-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+  margin: 10px auto;
+}
+
+.mameru-overlay-text {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: center;
+  color: #8b0000; /* dark red for golden bg */
+  text-shadow: 1px 1px 3px #ffd700; /* golden glow */
+  font-family: "Cinzel Decorative", serif;
+}
+
+.mameru-overlay-text .title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.mameru-overlay-text .date,
+.mameru-overlay-text .time {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}

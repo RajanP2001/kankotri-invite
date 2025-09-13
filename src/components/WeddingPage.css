@@ -1,0 +1,63 @@
+.wedding-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #000; /* Black padding */
+}
+
+.wedding-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wedding-background-image {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+  display: block;
+  margin: 10px auto;
+  position: relative;
+}
+
+/* Overlay text */
+.wedding-overlay-text {
+  position: absolute;
+  top: 25%; /* safe zone */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: center;
+  color: #800000; /* deep maroon */
+  text-shadow: 2px 2px 6px rgba(255, 215, 0, 0.7); /* golden glow */
+  font-family: "Cinzel Decorative", serif;
+}
+
+/* Title */
+.wedding-overlay-text .wedding-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+/* Date */
+.wedding-overlay-text .wedding-date {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+}
+
+/* Time */
+.wedding-overlay-text .wedding-time {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}

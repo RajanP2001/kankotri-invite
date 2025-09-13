@@ -1,0 +1,40 @@
+.first-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #000;
+}
+
+.first-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-background-image {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.first-overlay-text {
+  position: absolute;
+  top: 2%; /* slightly lower, but within image */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #f5f5dc; /* ivory */
+  text-align: center;
+  font-family: "Noto Serif Devanagari", serif;
+}
