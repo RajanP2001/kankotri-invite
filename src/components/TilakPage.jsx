@@ -6,11 +6,10 @@ const TilakPage = () => {
     <div className="tilak-page">
       <div className="tilak-image-container">
         <img
-          src="/images/Tilak.jpg"
+          src={`${import.meta.env.BASE_URL}images/Tilak.jpg`}
           alt="Tilak Ceremony Background"
           className="tilak-background-image"
         />
-
         <div className="tilak-overlay-text">
           <h1 className="tilak-title">Tilak Ceremony</h1>
           <p className="tilak-date">4th December 2025</p>

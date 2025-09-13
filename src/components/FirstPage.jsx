@@ -6,7 +6,7 @@ const FirstPage = () => {
     <div className="first-page">
       <div className="first-image-container">
         <img
-          src="/images/ganapati.jpg"
+          src={`${import.meta.env.BASE_URL}images/ganapati.jpg`}
           alt="Ganapati"
           className="first-background-image"
         />

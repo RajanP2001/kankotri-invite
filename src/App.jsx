@@ -37,7 +37,7 @@ function App() {
     if (page < pages.length - 1) {
       const timer = setTimeout(() => {
         setPage((p) => p + 1);
-      }, 6000);
+      }, 5000);
       return () => clearTimeout(timer);
     } else {
       setAutoFlipping(false); // stop at last page

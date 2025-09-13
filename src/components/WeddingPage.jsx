@@ -6,11 +6,10 @@ const WeddingPage = () => {
     <div className="wedding-page">
       <div className="wedding-image-container">
         <img
-          src="/images/wedding.jpg" // make sure the file exists in public/images/
+          src={`${import.meta.env.BASE_URL}images/wedding.jpg`}
           alt="Wedding Ceremony Background"
           className="wedding-background-image"
         />
-
         <div className="wedding-overlay-text">
           <h1 className="wedding-title">Wedding Vows</h1>
           <p className="wedding-date">5th December 2025</p>

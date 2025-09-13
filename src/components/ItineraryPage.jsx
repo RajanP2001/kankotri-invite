@@ -6,11 +6,10 @@ const ItineraryPage = () => {
     <div className="itinerary-page">
       <div className="itinerary-image-container">
         <img
-          src="/images/itinerary.jpg"
+          src={`${import.meta.env.BASE_URL}images/itinerary.jpg`}
           alt="Wedding Itinerary Background"
           className="itinerary-background-image"
         />
-
         <div className="itinerary-overlay-text">
           <h1 className="itinerary-title">WEDDING ITINERARY</h1>
           <h2 className="itinerary-subtitle">VENUE</h2>

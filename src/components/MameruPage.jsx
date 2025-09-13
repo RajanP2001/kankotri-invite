@@ -6,11 +6,10 @@ const MameruPage = () => {
     <div className="mameru-page">
       <div className="mameru-image-container">
         <img
-          src="/images/mameru.jpg"
+          src={`${import.meta.env.BASE_URL}images/mameru.jpg`}
           alt="Mameru Ceremony Background"
           className="mameru-background-image"
         />
-
         <div className="mameru-overlay-text">
           <h1 className="mameru-title">Mameru</h1>
           <p className="mameru-date">5th December 2025</p>

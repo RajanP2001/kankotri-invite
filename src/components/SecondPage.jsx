@@ -6,11 +6,10 @@ const SecondPage = () => {
     <div className="second-page">
       <div className="second-image-container">
         <img
-          src="/images/wedding-bg.jpg"
+          src={`${import.meta.env.BASE_URL}images/wedding-bg.jpg`}
           alt="Wedding Invitation Background"
           className="second-background-image"
         />
-
         <div className="second-overlay-text">
           <h1 className="title">Wedding Invitation</h1>
           <p className="name">Roshni</p>
