@@ -2,8 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  width: 100%;
+  height: 100dvh;
   background-color: #000;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 12px 0 88px 0;
 }
 
 .second-image-container {
@@ -22,15 +26,15 @@
   border-radius: 12px;
   object-fit: contain;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   position: relative;
 }
 
 /* Centered safe text zone */
 .second-overlay-text {
   position: absolute;
-  top: 22%; /* start just a little higher */
-  bottom: 30%; /* stop earlier so text doesn't collide with umbrellas */
+  top: 22%;
+  bottom: 30%;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
@@ -38,16 +42,16 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: #4b0000; /* maroon */
+  color: #4b0000;
 }
 
 /* Heading - elegant but readable */
 .second-overlay-text .title {
   font-size: 2rem;
-  margin-bottom: 0.4rem; /* tighter */
+  margin-bottom: 0.4rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 700; /* bold heading */
+  font-weight: 700;
   font-family: "Playfair Display", serif;
   line-height: 1.2;
 }
@@ -55,9 +59,9 @@
 /* Names - elegant cursive */
 .second-overlay-text .name {
   font-size: 1.8rem;
-  margin: 0.2rem 0; /* tighter */
+  margin: 0.2rem 0;
   font-family: "Great Vibes", cursive;
-  font-weight: 600; /* bolder cursive */
+  font-weight: 600;
   line-height: 1.2;
 }
 
@@ -65,16 +69,16 @@
 .second-overlay-text .subtitle {
   font-size: 1rem;
   font-family: "Georgia", serif;
-  margin-bottom: 0.4rem; /* tighter */
-  font-weight: 700; /* bold */
+  margin-bottom: 0.4rem;
+  font-weight: 700;
   line-height: 1.3;
 }
 
 /* Small 'At' label */
 .second-overlay-text .at {
   font-size: 1.1rem;
-  margin: 0.2rem 0; /* reduced */
-  font-weight: 700; /* bold */
+  margin: 0.2rem 0;
+  font-weight: 700;
   font-family: "Georgia", serif;
   line-height: 1.2;
 }
@@ -82,17 +86,17 @@
 /* Venue - bold royal serif */
 .second-overlay-text .venue {
   font-size: 1.3rem;
-  margin-bottom: 0.4rem; /* tighter */
+  margin-bottom: 0.4rem;
   font-family: "Cinzel Decorative", serif;
   font-weight: 700;
   line-height: 1.2;
 }
 
-/* Date - subtle but bolder cursive */
+/* Date */
 .second-overlay-text .date {
   font-size: 1.1rem;
-  margin-top: 0.8rem; /* extra space before date */
-  font-family: "Georgia", serif; /* clean and readable */
+  margin-top: 0.8rem;
+  font-family: "Georgia", serif;
   font-weight: 600;
   line-height: 1.2;
 }

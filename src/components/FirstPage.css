@@ -2,15 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  width: 100%;
+  height: 100dvh; /* lock to viewport */
   background-color: #000;
+  overflow: hidden; /* no scroll */
+  box-sizing: border-box;
+  padding: 12px 0 88px 0; /* small top pad + reserved bottom for buttons */
 }
 
 .first-image-container {
   position: relative;
   width: 100%;
   max-width: 600px;
-  height: 100%;
+  height: 100%; /* fill available height minus padding */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,19 +26,20 @@
   border-radius: 12px;
   object-fit: contain;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto; /* black breathing space top/bottom */
   position: relative;
 }
 
 .first-overlay-text {
   position: absolute;
-  top: 2%; /* slightly lower, but within image */
+  top: 5%; /* keep away from notch */
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
   font-weight: 700;
   white-space: nowrap;
-  color: #f5f5dc; /* ivory */
+  color: #f5f5dc;
   text-align: center;
   font-family: "Noto Serif Devanagari", serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
